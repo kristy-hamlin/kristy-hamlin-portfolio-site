@@ -157,7 +157,12 @@ a:hover {
     top: 5px;
     left: 5px;
     font-size: 1.5rem;
+}
 
+@media screen and (max-width: 1200px){
+    .download-link{
+        position: absolute;
+    }
 }
 
 /*---------------------PAGE LAYOUT----------------------*/
@@ -272,7 +277,7 @@ header .transparent-wrapper {
     }
 
 }
-@media screen and (max-width:859px) {
+@media screen and (min-width: 650px) and (max-width:859px) {
     /*Styles in here only get applied when screen is 860px or larger) */
         .project-wrapper {
             display: grid;
@@ -284,6 +289,13 @@ header .transparent-wrapper {
         }
     
     }
+
+@media screen and (max-width: 500px){
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 
 
 /*---------------------WORK EXPERIENCE--------------------*/
