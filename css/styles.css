@@ -77,20 +77,15 @@ img {
 
 /*Links*/
 a {
-
     color: #cc655a;
-
 }
 
 a:hover {
-
     color: #ed4532; 
     text-decoration: none;
-
 }
 
 .btn {
-
     background: #ed4532; 
     color: #f6f6f6;
     text-decoration: none;
@@ -101,7 +96,6 @@ a:hover {
     letter-spacing: .1em;
     line-height: 1;
     border-radius: 6px;
-
 }
 
 .socials {
@@ -119,28 +113,22 @@ a:hover {
 }
 
 .content-wrapper {
-
     margin: 0 auto;
     padding: 30px;
     max-width: 900px;
-
-
 }
 
 
 @media screen and (min-width:860px) {
     /*Styles in here only get applied when screen is 860px or larger) */ 
     .image-item img{
-
         float: left;
         margin-right: 30px;
-
     }
 }
 
 .image-item {
     display: flow-root;
-    
 }
 
 .resume-section{
@@ -167,7 +155,6 @@ a:hover {
 
 /*---------------------PAGE LAYOUT----------------------*/
 .main-container {
-
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -179,26 +166,16 @@ a:hover {
 
 /*---------------------HEADER SECTION--------------------*/
 header::before{
-
     background: url(../images/Portfolio-Site-Header.png);
     background-size: cover;
     content: ""; /*needed for the before pseudo-element to display*/
     display: block;
     height: 500px;
-
-
 }
 
 header {
-    /*background: url(../images/biotissue/allison-talking.jpg) no-repeat;
-    background-size: cover; */
     color: black;
 }
-
-/* header img{
-    width: 50px;
-    height: 50px;
-} */
 
 header .transparent-wrapper {
     background: rgb(255 255 255 / 0.5);
@@ -217,10 +194,6 @@ header .transparent-wrapper {
     z-index: 2;
     width: 300px;
     height: 300px;
-
-  /*  float: left;
-    width: 300px;
-    heigh: 300px; */
 
 }
 
@@ -248,7 +221,6 @@ header .transparent-wrapper {
     margin: 0;
 }
 
-
 /*---------------------FEATURED PROJECTS--------------------*/
 
 
@@ -257,7 +229,7 @@ header .transparent-wrapper {
     color: #252A31;
 }
 
-.projects img{
+.project-item img{
     width: 300px;
 }
 
