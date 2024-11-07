@@ -223,24 +223,41 @@ header .transparent-wrapper {
 /*---------------------EDUCATION--------------------*/
 
 .education {
-    background: #CCB7AE;
+    background: url(../images/education-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
 }
 
 .education img{
     width: 100px;
     height: 80px;
+    float: none;
+    display: block;
+    margin: 30px auto;
 }
 
 .education-item {
     margin: 30px 0;
 }
 
-.education-item h1, .education-item h2, .education-item h3 {
+.education-item h1, .education-item h2, .education-item h3, .education-item h4 {
     margin: 0;
+    text-align: center;
+}
+
+.education-item .list-header {
+    text-align: left;
 }
 
 .education-item p{
     margin: 0;
+}
+
+@media screen and (max-width: 800px){
+
+
+
 }
 
 /*---------------------FEATURED PROJECTS--------------------*/
