@@ -230,11 +230,11 @@ header .transparent-wrapper {
 }
 
 .education img{
-    width: 100px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     float: none;
     display: block;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
 .education-item {
