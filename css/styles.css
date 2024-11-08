@@ -18,431 +18,412 @@
 /*---------------------GLOBAL STYLES--------------------*/
 
 html {
-    box-sizing: border-box;  /*box model fix part 1*/
+  box-sizing: border-box; /*box model fix part 1*/
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;    /*box model fix part 2*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /*box model fix part 2*/
 }
 
-body{
-    color:#565264;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
+body {
+  color: #565264;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 h1.decorative-heading {
-    font-family: "Rock Salt", cursive;
-   
+  font-family: "Rock Salt", cursive;
 }
 
-h1, h2, h3 {
-    font-family: "Bebas Neue", sans-serif;
-    
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 h1 {
-    font-size: 4.25rem;
+  font-size: 4.25rem;
 }
 
 h2 {
-    font-size: 3.25rem;
+  font-size: 3.25rem;
 }
 
 h3 {
-    font-size: 2.75rem;
+  font-size: 2.75rem;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /*sets default to 10px*/
+  box-sizing: border-box;
+  font-size: 62.5%; /*sets default to 10px*/
 }
 
-html, body, main {
-
-    height: 100%;
-
+html,
+body,
+main {
+  height: 100%;
 }
 
 img {
-    width: 600px;
+  width: 600px;
 }
 
-
 .center {
-    text-align:center; 
+  text-align: center;
 }
 
 /*Links*/
 a {
-    color: #cc655a;
+  color: #cc655a;
 }
 
 a:hover {
-    color: #ed4532; 
-    text-decoration: none;
+  color: #ed4532;
+  text-decoration: none;
 }
 
 .btn {
-    background: #ed4532; 
-    color: #f6f6f6;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: .1em;
-    line-height: 1;
-    border-radius: 6px;
+  background: #ed4532;
+  color: #f6f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  border-radius: 6px;
 }
 
 .socials {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
 .socials li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .socials img {
-    width: 50px;
+  width: 50px;
 }
 
 .content-wrapper {
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
 }
 
-
-@media screen and (min-width:860px) {
-    /*Styles in here only get applied when screen is 860px or larger) */ 
-    .image-item img{
-        float: left;
-        margin-right: 30px;
-    }
+@media screen and (min-width: 860px) {
+  /*Styles in here only get applied when screen is 860px or larger) */
+  .image-item img {
+    float: left;
+    margin-right: 30px;
+  }
 }
 
 .image-item {
-    display: flow-root;
+  display: flow-root;
 }
 
-.resume-section{
-    border-bottom: 50px;
+.resume-section {
+  border-bottom: 50px;
 }
 
-.resume-title{
-    border-bottom: 2px dashed black;
-    text-align: center;
+.resume-title {
+  border-bottom: 2px dashed black;
+  text-align: center;
 }
 
 .download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    font-size: 1.5rem;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1200px){
-    .download-link{
-        position: absolute;
-    }
+@media screen and (max-width: 1200px) {
+  .download-link {
+    position: absolute;
+  }
 }
 
 /*---------------------PAGE LAYOUT----------------------*/
 .main-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-container .content-flex-wrapper {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 /*---------------------HEADER SECTION--------------------*/
-header::before{
-    background: url(../images/Portfolio-Site-Header.png);
-    background-size: cover;
-    content: ""; /*needed for the before pseudo-element to display*/
-    display: block;
-    height: 500px;
+header::before {
+  background: url(../images/Portfolio-Site-Header.png);
+  background-size: cover;
+  content: ""; /*needed for the before pseudo-element to display*/
+  display: block;
+  height: 500px;
 }
 
 header {
-    color: black;
+  color: black;
 }
 
 header .transparent-wrapper {
-    background: rgb(255 255 255 / 0.5);
+  background: rgb(255 255 255 / 0.5);
 }
 
 .headshot-container {
-   /* display: flow-root; */
+  /* display: flow-root; */
 }
 
 .headshot {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .headshot {
     position: absolute;
-    top:400px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+  }
+
+  header::before {
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
 }
-
-@media screen and (max-width: 500px){
-    .headshot {
-        position: absolute;
-        top:100px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        width: 200px;
-        height: 200px;
-    }
-
-    header::before {
-        height: 200px;
-    }
-    
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.6rem;
-    }
-}
-
 
 /*---------------------EDUCATION--------------------*/
 
 .education {
-    background: url(../images/education-bg.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: black;
+  background: url(../images/education-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
 }
 
-.education img{
-    width: 200px;
-    height: 200px;
-    float: none;
-    display: block;
-    margin: 0px auto;
+.education img {
+  width: 200px;
+  height: 200px;
+  float: none;
+  display: block;
+  margin: 0px auto;
 }
 
 .education-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
-.education-item h1, .education-item h2, .education-item h3, .education-item h4 {
-    margin: 0;
-    text-align: center;
+.education-item h1,
+.education-item h2,
+.education-item h3,
+.education-item h4 {
+  margin: 0;
+  text-align: center;
 }
 
 .education-item .list-header {
-    text-align: left;
+  text-align: left;
 }
 
-.education-item p{
-    margin: 0;
+.education-item p {
+  margin: 0;
 }
 
-@media screen and (max-width: 800px){
-
-
-
+@media screen and (max-width: 800px) {
 }
 
 /*---------------------FEATURED PROJECTS--------------------*/
 
-
 .projects {
-    background: #f7f7f7;
-    color: #252A31;
+  background: #f7f7f7;
+  color: #252a31;
 }
 
-
-
-.project-item{
-    margin: 30px 0;
+.project-item {
+  margin: 30px 0;
 }
 
-@media screen and (min-width:860px) {
-/*Styles in here only get applied when screen is 860px or larger) */
-    .project-item{
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
-    }
-    .project-item h3{
-        grid-column: span 2;
-    }
-    .project-item img{
-        width: 300px;
-    }
+@media screen and (min-width: 860px) {
+  /*Styles in here only get applied when screen is 860px or larger) */
+  .project-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+  }
+  .project-item h3 {
+    grid-column: span 2;
+  }
+  .project-item img {
+    width: 300px;
+  }
 }
-@media screen and (min-width: 650px) and (max-width:859px) {
-    /*Styles in here only get applied when screen is 860px or larger) */
-        .project-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 20px;
-        }
-        .project-item img{
-            width: 100%;
-        }
-    
-    }
-
-@media screen and (max-width: 500px){
-    .project-item {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .project-item img{
-        width: 100%;
-        margin-bottom: 10px;
-    }
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  /*Styles in here only get applied when screen is 860px or larger) */
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .project-item img {
+    width: 100%;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .project-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .project-item img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 
 /*---------------------WORK EXPERIENCE--------------------*/
 
-
-.work-experience{
-    background: url(../images/biotissue/group-shot.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: black;
-
+.work-experience {
+  background: url(../images/biotissue/group-shot.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
 }
 
 .work-experience .transparent-wrapper {
-    background: rgb(255 255 255 / 0.8);
+  background: rgb(255 255 255 / 0.8);
 }
 
-.work-item{
-    margin: 30px 0;
+.work-item {
+  margin: 30px 0;
 }
 
-.work-item h1, .work-item h2, .work-item h3 {
-    margin: 0;
+.work-item h1,
+.work-item h2,
+.work-item h3 {
+  margin: 0;
 }
 
-.col1 p{
-    margin: 0;
+.col1 p {
+  margin: 0;
 }
 
-.col1 img{
-    width: 300px;
+.col1 img {
+  width: 300px;
 }
 
-.col1 .tall-image{
-    width: 150px;
-    height: 255px;
-    margin: 25px 75px 25px 75px;
-    
+.col1 .tall-image {
+  width: 150px;
+  height: 255px;
+  margin: 25px 75px 25px 75px;
 }
 
-
-
-@media screen and (min-width: 860px){
-    .work-item{
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
-    }
-    .col2 p:first-child{
-        margin-top: 0;
-    }
-
-
+@media screen and (min-width: 860px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+  }
+  .col2 p:first-child {
+    margin-top: 0;
+  }
 }
 /*----------------------SKILLS ----------------------------------*/
 
-.skills-group{
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    gap: 15px;
-    align-items: center;
+.skills-group {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
 }
 
-.skills-group .col1{
-    max-width: 500px;
+.skills-group .col1 {
+  max-width: 500px;
 }
 
-.skills-group h3, h2 {
-    text-align: center;
-    /*margin-top: 50px;*/
+.skills-group h3,
+h2 {
+  text-align: center;
+  /*margin-top: 50px;*/
 }
 
 .skills-group img {
-    width: 375px;
-    text-align: center;
-    align-items: center;
+  width: 375px;
+  text-align: center;
+  align-items: center;
 }
 
-@media screen and (min-width:860px) {
-    /*Styles in here only get applied when screen is 860px or larger) */
-    .skills-group{
-        display: grid;
-        grid-template-columns: 400px 400px;
-        column-gap: 20px;
-    }   
+@media screen and (min-width: 860px) {
+  /*Styles in here only get applied when screen is 860px or larger) */
+  .skills-group {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 20px;
+  }
 }
-
 
 /*---------------------CONTACT INFO / KEEP IN TOUCH--------------------*/
 
 .contact-info {
-    background: #CCB7AE;  
+  background: #ccb7ae;
 }
 
 .contact-info h2 {
-    text-align: center;
+  text-align: center;
 }
 
-.contact-info img{
-    width: 50px;
+.contact-info img {
+  width: 50px;
 }
 
 .contact-info li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.contact-info img:hover{
-    opacity: 0.5;
+.contact-info img:hover {
+  opacity: 0.5;
 }
 
-@media screen and (min-width: 860px){
-    .contact-info {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-      
-    }
+@media screen and (min-width: 860px) {
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
 }
-@media screen and (max-width: 859px){
-    .contact-info {
-        text-align: center;
-        padding: 10px;
-    }
+@media screen and (max-width: 859px) {
+  .contact-info {
+    text-align: center;
+    padding: 10px;
+  }
 }
-
-
-
-
-
-
-

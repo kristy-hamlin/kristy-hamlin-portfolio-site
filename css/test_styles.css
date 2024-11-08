@@ -1,12 +1,11 @@
 h1 {
-    padding: 50px;
+  padding: 50px;
 }
 
-span, div {
-    background: pink;
-    border-style: dashed;
-    padding: 50px;
-    margin: 20px;
-  
+span,
+div {
+  background: pink;
+  border-style: dashed;
+  padding: 50px;
+  margin: 20px;
 }
-
